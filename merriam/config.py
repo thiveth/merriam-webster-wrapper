@@ -2,9 +2,6 @@ import os
 
 from dotenv import load_dotenv
 
-# Loads variables from a local .env file (if present) into the environment.
-# In production, real environment variables (set by the OS, CI, or host)
-# take precedence and this simply won't find a .env file to load.
 load_dotenv()
 
 THESAURUS_API_KEY = os.getenv("MERRIAM_THESAURUS_API_KEY")
